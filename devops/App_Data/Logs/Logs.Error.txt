@@ -1,0 +1,624 @@
+ERROR 2019-10-29 14:41:01,256 [19   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:01,267 [19   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000003": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:01,307 [17   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:01,310 [17   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000004": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:01,368 [12   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:01,369 [12   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000005": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:01,406 [18   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:01,409 [18   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000006": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:36,773 [10   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:36,775 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000007": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:36,792 [28   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:36,794 [28   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000008": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:36,831 [18   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:36,834 [18   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:00000009": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:41:36,863 [12   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:41:36,866 [12   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7BKJL0SF", Request id "0HLQS7BKJL0SF:0000000A": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:53:19,662 [10   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:53:19,675 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61ET", Request id "0HLQS7IHV61ET:00000001": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:53:19,688 [13   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:53:19,689 [13   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61ET", Request id "0HLQS7IHV61ET:00000002": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:53:19,696 [10   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:53:19,698 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61ET", Request id "0HLQS7IHV61ET:00000003": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:53:19,708 [10   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:53:19,709 [10   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61ET", Request id "0HLQS7IHV61ET:00000004": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:54:16,709 [6    ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:54:16,711 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F1", Request id "0HLQS7IHV61F1:00000001": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:54:16,741 [15   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:54:16,743 [15   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F1", Request id "0HLQS7IHV61F1:00000002": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:54:16,766 [21   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:54:16,768 [21   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F1", Request id "0HLQS7IHV61F1:00000003": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:54:16,781 [19   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:54:16,783 [19   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F1", Request id "0HLQS7IHV61F1:00000004": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:56:08,196 [18   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:56:08,198 [18   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F4", Request id "0HLQS7IHV61F4:00000001": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:56:08,220 [11   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:56:08,222 [11   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F4", Request id "0HLQS7IHV61F4:00000002": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:56:08,232 [11   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:56:08,233 [11   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F4", Request id "0HLQS7IHV61F4:00000003": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:56:08,246 [18   ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:56:08,249 [18   ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F4", Request id "0HLQS7IHV61F4:00000004": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:57:48,039 [6    ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:57:48,042 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F8", Request id "0HLQS7IHV61F8:00000001": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:57:48,070 [6    ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:57:48,072 [6    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F8", Request id "0HLQS7IHV61F8:00000002": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:57:48,087 [5    ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:57:48,089 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F8", Request id "0HLQS7IHV61F8:00000003": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ERROR 2019-10-29 14:57:48,100 [5    ] uthentication.JwtBearer.JwtBearerHandler - Exception occurred while processing message.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+ERROR 2019-10-29 14:57:48,102 [5    ] Microsoft.AspNetCore.Server.Kestrel      - Connection id "0HLQS7IHV61F8", Request id "0HLQS7IHV61F8:00000004": An unhandled exception was thrown by the application.
+System.Security.Cryptography.CryptographicException: The input data is not a complete block.
+   at Internal.Cryptography.UniversalCryptoDecryptor.UncheckedTransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at Internal.Cryptography.UniversalCryptoTransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at Abp.Runtime.Security.SimpleStringCipher.Decrypt(String cipherText, String passPhrase, Byte[] salt)
+   at Cloudstron.DevOps.Web.Host.Startup.AuthConfigurer.QueryStringTokenResolver(MessageReceivedContext context) in /Users/tao/Projects/Workspaces/CSharp/Cloudstron/DevOps/Cloudstron.DevOps/aspnet-core/src/Cloudstron.DevOps.Web.Host/Startup/AuthConfigurer.cs:line 74
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.InvokeCore(HttpContext context)
+   at Abp.AspNetCore.Security.AbpSecurityHeadersMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)

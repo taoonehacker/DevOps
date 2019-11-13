@@ -1,0 +1,2 @@
+WARN  2019-10-29 14:56:10,043 [12   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported cultures 'null'.
+WARN  2019-10-29 14:56:10,047 [12   ] calization.RequestLocalizationMiddleware - AbpLocalizationHeaderRequestCultureProvider returned the following unsupported UI Cultures 'null'.
