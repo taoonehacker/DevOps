@@ -25,29 +25,29 @@
 
 2.应用池托管模式：无托管模式
 
-3.权限：everyone和IIS_IUSERS
+3.权限:everyone和IIS_IUSERS
 
 4.访问http://IP:5000
 
 ### 3.运维前端部署
 #### 3.1修改配置文件
 
-1.修改后端地址(remoteservicebaseurl):即部署的运维的后端地址：http://IP:5000
+1.修改后端地址(remoteservicebaseurl):即部署的运维的后端地址:http://IP:5000
 
-2.修改前端地址(appbaseurl):即部署的运维前端地址：http://IP:8000
+2.修改前端地址(appbaseurl):即部署的运维前端地址:http://IP:8000
 
 #### 3.2IIS添加项目
 1.端口绑定8000
 
-2.权限：everyone和IIS_IUSERS
+2.权限:everyone和IIS_IUSERS
 
 3.访问http://IP:8000
 
 ### 4.运维采集端部署
 
 #### 4.1修改配置文件
-1.站点：SiteId
+1.站点:SiteId
 
-2.数据回调地址：OpMtServerUri
+2.数据回调地址:OpMtServerUri
 
 3.启动采集端
