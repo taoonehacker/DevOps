@@ -2,13 +2,13 @@
 ## 运维部署说明
 ### 1.安装部署环境
 1.安装NetCore 2.2
-
+https://dotnet.microsoft.com/download
 2.安装NetCore Hosting 2.2
-
+https://dotnet.microsoft.com/download
 3.安装IIS URLRewriter
-
+https://www.iis.net/downloads/microsoft/url-rewrite
 4.安装Node.js
-
+https://nodejs.org/en/
 5.重启电脑
 
 ### 2.运维后端部署
